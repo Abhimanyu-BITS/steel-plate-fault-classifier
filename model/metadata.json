@@ -1,0 +1,158 @@
+{
+  "dataset_name": "Steel Plates Faults (UCI ML Repository, id=198)",
+  "source_url": "https://archive.ics.uci.edu/dataset/198/steel+plates+faults",
+  "target_column": "Fault_Type",
+  "class_labels": [
+    "Bumps",
+    "Dirtiness",
+    "K_Scatch",
+    "Other_Faults",
+    "Pastry",
+    "Stains",
+    "Z_Scratch"
+  ],
+  "feature_names": [
+    "X_Minimum",
+    "X_Maximum",
+    "Y_Minimum",
+    "Y_Maximum",
+    "Pixels_Areas",
+    "X_Perimeter",
+    "Y_Perimeter",
+    "Sum_of_Luminosity",
+    "Minimum_of_Luminosity",
+    "Maximum_of_Luminosity",
+    "Length_of_Conveyer",
+    "TypeOfSteel_A300",
+    "TypeOfSteel_A400",
+    "Steel_Plate_Thickness",
+    "Edges_Index",
+    "Empty_Index",
+    "Square_Index",
+    "Outside_X_Index",
+    "Edges_X_Index",
+    "Edges_Y_Index",
+    "Outside_Global_Index",
+    "LogOfAreas",
+    "Log_X_Index",
+    "Log_Y_Index",
+    "Orientation_Index",
+    "Luminosity_Index",
+    "SigmoidOfAreas"
+  ],
+  "n_features": 27,
+  "n_instances": 1941,
+  "n_train": 1455,
+  "n_test": 486,
+  "test_fraction": 0.25,
+  "random_seed": 42,
+  "cv_folds": 5,
+  "selection_metric": "f1_macro",
+  "averaging": {
+    "precision_recall_f1": "macro",
+    "auc": "macro one-vs-rest"
+  },
+  "model_files": {
+    "Logistic Regression": "logistic_regression.joblib",
+    "Decision Tree": "decision_tree.joblib",
+    "KNN": "knn.joblib",
+    "Naive Bayes": "naive_bayes.joblib",
+    "Support Vector Machine": "svm.joblib"
+  },
+  "model_order": [
+    "Logistic Regression",
+    "Decision Tree",
+    "KNN",
+    "Naive Bayes",
+    "Support Vector Machine"
+  ],
+  "tuning": {
+    "Logistic Regression": {
+      "best_params": {
+        "clf__C": "1.0",
+        "clf__class_weight": "None"
+      },
+      "cv_macro_f1": 0.7145,
+      "fit_seconds": 6.29
+    },
+    "Decision Tree": {
+      "best_params": {
+        "clf__class_weight": "None",
+        "clf__criterion": "entropy",
+        "clf__max_depth": "None",
+        "clf__min_samples_leaf": "5"
+      },
+      "cv_macro_f1": 0.7495,
+      "fit_seconds": 1.19
+    },
+    "KNN": {
+      "best_params": {
+        "clf__n_neighbors": "7",
+        "clf__p": "1",
+        "clf__weights": "distance"
+      },
+      "cv_macro_f1": 0.765,
+      "fit_seconds": 0.61
+    },
+    "Naive Bayes": {
+      "best_params": {
+        "clf__var_smoothing": "0.001"
+      },
+      "cv_macro_f1": 0.6269,
+      "fit_seconds": 0.12
+    },
+    "Support Vector Machine": {
+      "best_params": {
+        "clf__C": "10.0",
+        "clf__class_weight": "None",
+        "clf__gamma": "0.01"
+      },
+      "cv_macro_f1": 0.7798,
+      "fit_seconds": 0.91
+    }
+  },
+  "reference_metrics": {
+    "Logistic Regression": {
+      "Accuracy": 0.7222,
+      "AUC": 0.9386,
+      "Precision": 0.7632,
+      "Recall": 0.7113,
+      "F1": 0.7316,
+      "MCC": 0.6404
+    },
+    "Decision Tree": {
+      "Accuracy": 0.7449,
+      "AUC": 0.8819,
+      "Precision": 0.7585,
+      "Recall": 0.7157,
+      "F1": 0.7349,
+      "MCC": 0.6697
+    },
+    "KNN": {
+      "Accuracy": 0.751,
+      "AUC": 0.9359,
+      "Precision": 0.7443,
+      "Recall": 0.7717,
+      "F1": 0.7542,
+      "MCC": 0.6827
+    },
+    "Naive Bayes": {
+      "Accuracy": 0.6235,
+      "AUC": 0.925,
+      "Precision": 0.648,
+      "Recall": 0.7101,
+      "F1": 0.6424,
+      "MCC": 0.5611
+    },
+    "Support Vector Machine": {
+      "Accuracy": 0.7428,
+      "AUC": 0.9511,
+      "Precision": 0.8018,
+      "Recall": 0.7378,
+      "F1": 0.7654,
+      "MCC": 0.6672
+    }
+  },
+  "sklearn_version": "1.9.0",
+  "generated_at": "2026-11-07 23:58:07"
+}
