@@ -1,0 +1,16 @@
+# Exact versions used to fit and serialise the artefacts in model/.
+#
+# scikit-learn does not guarantee pickle compatibility across releases, so the
+# scikit-learn pin in particular is what stops the deployed app from failing on
+# joblib.load(). The remaining pins keep the deployment byte-identical to the
+# environment the README metrics were measured in.
+#
+# Streamlit Community Cloud -> Advanced settings -> Python version: 3.12 or 3.13
+
+streamlit==1.67.0
+scikit-learn==1.9.0
+numpy==2.5.1
+pandas==3.0.3
+joblib==1.6.0
+matplotlib==3.11.1
+seaborn==0.13.2
