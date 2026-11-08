@@ -106,7 +106,8 @@ of each cross-validation split and never sees the test data. There is no leakage
 
 > **https://github.com/Abhimanyu-BITS/steel-plate-fault-classifier**
 
-**Live Streamlit app:** `<PASTE-YOUR-STREAMLIT-APP-URL-HERE>`
+**Live Streamlit app:** <https://steel-plate-fault-classifier-mrfpv2eisustmemetpwgky.streamlit.app/>
+`
 
 ### Repository contents
 
